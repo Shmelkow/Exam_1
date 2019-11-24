@@ -4,51 +4,205 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Bhromaon</title>
     
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/app.css">
-
+    <script src="https://kit.fontawesome.com/139909b29c.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Aleo:400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
-    <header class="ba-header">
-        <div class="container">
-            <a href="" class="ba-logo"></a>
+    <!-----------BA-BANNER------------>
+    <div class="ba-banner">
+        <section class="ba-hero">
+            <div class="container ba-hero__wrapper">
+                <div class="ba-hero__middle">
+                    <h1 class="ba-hero__title">Bhromaon</h1>
+                    <p class="ba-hero__text">Safe Travel Anywhere</p>
+                    <div class="ba-hero-search">
+                        <form action="/action_page.php"  class="ba-hero-search__form">
+                            <input type="text" class="ba-hero-search__placeholder" placeholder="Search Your Travel Destination" name="search">
+                            <button type="submit" class="ba-hero-search__btn">Search<i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
 
-            <nav>
-                <ul class="ba-menu">
-                    <li class="ba-menu__item">
-                        <a href="#" class="ba-menu__link">item 1</a>
-                    </li>
-                    <li class="ba-menu__item">
-                        <a href="#" class="ba-menu__link">item 2/a>
-                    </li>
-                    <li class="ba-menu__item">
-                        <a href="#" class="ba-menu__link">item 3</a>
-                    </li>
-                    <li class="ba-menu__item">
-                        <a href="#" class="ba-menu__link">item 4</a>
-                    </li>
-                </ul>
-            </nav>
-
-        </div>
-    </header>
-
-    <main>
-
-        <section class="ba-section">
-            <div class="container">
+                <div class="ba-hero__bottom">
+                    <a href="#about" class="ba-hero__scroll" aria-label="scroll down">Scroll Down</a>
+                </div>
 
             </div>
         </section>
+        
+        <header class="ba-header">
+            <div class="container ba-header__wrapper">
+                <a href="#" class="ba-header__logo">Bhromaon</a>
 
+                <nav>
+                    <ul class="ba-menu">
+                        <li class="ba-menu__item">
+                            <a href="#" class="ba-menu__link">Who We Are</a>
+                        </li>
+                        <li class="ba-menu__item">
+                            <a href="#" class="ba-menu__link">What We Do</a>
+                        </li>
+                        <li class="ba-menu__item">
+                            <a href="#" class="ba-menu__link">Travel With Us</a>
+                        </li>
+                        <li class="ba-menu__item">
+                            <a href="#" class="ba-menu__link">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+    </div> 
+
+    <main>
+        <!-----------BA-PLACES------------>
+        <section class="ba-places">
+            <div class="container">
+                <div class="ba-row ba-places-content">
+                    <div class="ba-col-6 ba-places__item">
+                        <h2 class="ba-places__title">Why Choose Us</h2>
+                        <div class="ba-places__text">
+                            <p>
+                                Tion and dislike men who are so beguiled and demoralized by desire by the charms
+                                of pleasure of the moment, so blinded by desire, that they cannot foresee 
+                            </p>
+                            <p>
+                                Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, 
+                                so blinded by desire, that.
+                            </p>
+                        </div>
+                        <button class="ba-btn">Explore Places </button>
+                    </div>
+                    <div class="ba-col-6 ba-places__item">
+                        <div class="ba-places__picture">    
+                            <img src="images/places_1.jpg" alt="places foto" class="ba-places__img">   
+                        </div>   
+                        <div class="ba-places__picture">    
+                            <img src="images/places_2.jpg" alt="places foto" class="ba-places__img">   
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-----------BA-SELECT------------>
+        <section class="ba-select">
+            <div class="container ba-select-wrapper">
+                <nav>
+                    <ul class="ba-select-links">
+                        <li class="ba-select-links__item">
+                            <a href="#" class="ba-select__link">
+                                <img src="images/select_search.png" alt="search logo" class="ba-select__img">
+                                <h2 class="ba-select__title">Search Places</h2>
+                            </a>
+                        </li>
+                        <li class="ba-dishes-links__item">
+                            <a href="#" class="ba-select__link">
+                                <img src="images/select_places.png" alt="select places logo" class="ba-select__img">
+                                <h2 class="ba-select__title">Select Places</h2>
+                            </a>
+                        </li>
+                        <li class="ba-select-links__item">
+                            <a href="#" class="ba-select__link">
+                                <img src="images/select_enjoy.png" alt="enjoy logo" class="ba-select__img">
+                                <h2 class="ba-select__title">Book & Enjoy</h2>
+                            </a>
+                        </li>
+                    </ul> 
+                </nav>
+            </div>
+        </section>
+        <!-----------BA-BOOK-1------------>
+        <section class="ba-book">
+            <div class="container">
+                <div class="ba-col-6 ba-book-block">
+                    <h3 class="ba-book__country">Spain</h3>
+                    <h2 class="ba-book__title">Grand Spain Madrid</h2>
+                    <p class="ba-book__text">
+                        But I must explain to you how all this mistaken idea of account to denouncing
+                        pleasure and praising pain was account  born and I account will give you a 
+                        complete account of the system
+                    </p>
+                    <button class="ba-btn">book now</button>
+                </div>
+            </div>
+        </section>
+        <!-----------BA-BOOK-2------------>
+        <section class="ba-book ba-book_reverse">
+            <div class="container">
+                <div class="ba-col-6 ba-book-block ba-book-block_reverse">
+                    <h3 class="ba-book__country">Spain</h3>
+                    <h2 class="ba-book__title">Grand Spain Madrid</h2>
+                    <p class="ba-book__text">
+                        But I must explain to you how all this mistaken idea of account to denouncing
+                        pleasure and praising pain was account  born and I account will give you a 
+                        complete account of the system
+                    </p>
+                    <button class="ba-btn">book now</button>
+                </div>
+            </div>
+            </section>
+        <!-----------BA-COMMENT------------>
+        <section class="ba-comment">
+            <div class="container">
+                <h2 class="ba-comment__title">What Our  Tourist Say</h2>
+                <div class="ba-col-12 ba-comment-block">
+                    <div class="ba-comment__picture">    
+                        <img src="images/comment_pic.jpg" alt="tourist foto" class="ba-comment__img">   
+                    </div>
+                    <div class="ba-comment__text">
+                        <h3 class="ba-tourist__title">Sam Sumon</h3>
+                        <p class="ba-tourist__text"><sup><i class="fas fa-quote-left"></i></sup>
+                            But I must explain to you how all this mistaken idea of account to denouncinpleasure 
+                            and praising pain  But I must explain to you how all this mistaken idea of account 
+                            to nai denouncing pleasure and praising pain was account  born and I account will 
+                            give you a complete account of the system was account  born and I account will give 
+                            you a nai the complete account of the system
+                        </p>
+                    </div>
+
+                </div>
+                
+            </div>
+        </section>
     </main>
+    <!-----------BA-FOOTER------------>
 
     <footer class="ba-footer">
         <div class="container">
+            <div class="ba-section-header">
+                <h2 class="ba-footer__title">Bhromaon</h2>
+                <p class="ba-footer__text">Safe Travel Anywhere</p>
 
+            </div>
+            <div class="ba-footer-list">
+                <ul class="ba-footer-menu">
+                    <li class="ba-footer-menu__item">
+                        <a href="#" class="ba-footer__link"><i class="fab fa-facebook-f"></i></a> 
+                    </li>
+                    <li class="ba-footer-menu__item">
+                        <a href="#" class="ba-footer__link"><i class="fab fa-twitter"></i></a> 
+                    </li>
+                    <li class="ba-footer-menu__item">
+                        <a href="#" class="ba-footer__link"><i class="fab fa-linkedin-in"></i></a> 
+                    </li>
+                    <li class="ba-footer-menu__item">
+                        <a href="#" class="ba-footer__link"><i class="fab fa-youtube"></i></a> 
+                    </li>
+                    <li class="ba-footer-menu__item">
+                        <a href="#" class="ba-footer__link"><i class="fab fa-pinterest"></i></a> 
+                    </li>
+                    
+                </ul>
+            </div>
         </div>
     </footer>
 

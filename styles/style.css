@@ -1,9 +1,293 @@
 /* style.scss*/
-.ba-menu {
-  display: flex;
-  align-items: center;
-  list-style: none; }
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 auto;
+  font-weight: 400; }
 
-.ba-menu__link {
+a {
   color: inherit;
   text-decoration: none; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: 'Aleo', serif;
+  font-weight: 400;
+  color: #ffffff;
+  border: 15px solid white; }
+
+.ba-hero {
+  height: calc(100vh - 95px);
+  background-image: url(../images/bg-image.jpg);
+  background-color: #5474fd;
+  background-size: cover;
+  padding: 32vh 0 16vh; }
+  .ba-hero__wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .ba-hero__middle {
+    text-align: center; }
+  .ba-hero__bottom {
+    text-align: center;
+    position: relative; }
+  .ba-hero__scroll {
+    display: inline-block;
+    font-family: "Josefin Sans";
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2.8px; }
+  .ba-hero__scroll::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg); }
+  .ba-hero__title {
+    font-family: "Josefin Sans";
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4.8px; }
+  .ba-hero__text {
+    font-family: "Josefin Sans";
+    font-size: 22px;
+    letter-spacing: 6.82px; }
+  .ba-hero-search__form {
+    display: flex;
+    justify-content: center;
+    max-width: 650px;
+    margin: 0 auto; }
+  .ba-hero-search__placeholder {
+    flex-grow: 1;
+    height: 60px;
+    border: 3px solid white;
+    text-align: center;
+    color: #999999;
+    font-family: "Josefin Sans";
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2.8px; }
+  .ba-hero-search__btn {
+    width: 150px;
+    height: 60px;
+    background-color: #5474fd;
+    outline: none;
+    border: 3px solid white;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px; }
+
+.fa-search {
+  color: white;
+  font-size: 18px;
+  margin-left: 14px;
+  vertical-align: inherit; }
+
+.ba-header {
+  height: 80px;
+  background-color: #5474fd;
+  display: flex;
+  align-items: center; }
+  .ba-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .ba-header__logo {
+    font-family: "Josefin Sans";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 2.4px; }
+
+.ba-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none; }
+  .ba-menu__item + .ba-menu__item {
+    margin-left: 42px; }
+  .ba-menu__link {
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase; }
+
+.ba-places {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-image: url(../images/bg-places.jpg);
+  background-size: cover; }
+  .ba-places__title {
+    margin: 0;
+    font-size: 36px; }
+  .ba-places__text {
+    margin: 62px 0 48px;
+    max-width: 530px;
+    color: #e8e8e8;
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 1.6px; }
+  .ba-places__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+  .ba-places__item:last-child {
+    padding-left: 50px; }
+  .ba-places__picture:last-child {
+    align-self: flex-end; }
+  .ba-places__img {
+    max-width: 100%; }
+
+.ba-btn {
+  width: 225px;
+  height: 60px;
+  background-color: #5474fd;
+  outline: none;
+  border: 3px solid #5474fd;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px; }
+
+.ba-btn:hover {
+  background-color: #8497ee; }
+
+.ba-select {
+  min-height: 337px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #333333;
+  background-image: url(../images/duga.png);
+  background-repeat: no-repeat;
+  background-position: center 60px;
+  display: flex;
+  align-items: center; }
+  .ba-select-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .ba-select__link {
+    display: block;
+    background-color: #333333;
+    text-align: center; }
+  .ba-select__title {
+    color: #e8e8e8;
+    font-size: 36px;
+    line-height: 26px;
+    margin-top: 30px; }
+
+.ba-book {
+  min-height: 700px;
+  padding-top: 229px;
+  padding-bottom: 100px;
+  background-image: url(../images/ba-book_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .ba-book-block {
+    background-color: rgba(35, 35, 35, 0.9);
+    padding: 50px 30px; }
+  .ba-book__country {
+    color: #e8e8e8;
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px; }
+  .ba-book__title {
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-bottom: 30px; }
+  .ba-book__text {
+    color: #e8e8e8;
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 48px; }
+
+.ba-book_reverse {
+  background-image: url(../images/ba-book_2.jpg); }
+
+.ba-book-block_reverse {
+  margin-left: auto; }
+
+.ba-comment {
+  min-height: 730px;
+  padding-top: 120px;
+  padding-bottom: 200px;
+  background-image: url(../images/bg-comment.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .ba-comment-block {
+    display: flex;
+    align-items: stretch;
+    justify-content: center; }
+  .ba-comment__img {
+    height: 100%;
+    max-width: 445px;
+    object-fit: cover; }
+  .ba-comment__title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 94px; }
+  .ba-comment__text {
+    background-color: #333333;
+    padding: 50px 54px 48px 60px; }
+
+.ba-tourist__title {
+  color: #fefefe;
+  font-family: "Josefin Sans";
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 33px; }
+
+.ba-tourist__text {
+  color: #e8e8e8;
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0; }
+
+.fa-quote-left {
+  color: #5474fd;
+  font-size: 25px; }
+
+.ba-footer {
+  min-height: 268px;
+  background-color: #232323;
+  padding-top: 120px;
+  padding-bottom: 54px;
+  text-align: center; }
+  .ba-footer__title {
+    font-family: "Josefin Sans";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 3.36px; }
+  .ba-footer__text {
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 1.6px;
+    margin-bottom: 31px; }
+  .ba-footer-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .ba-footer-menu__item + .ba-footer-menu__item {
+      margin-left: 28px; }
+  .ba-footer__link:hover {
+    color: #5474fd; }
